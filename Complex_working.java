@@ -6,7 +6,8 @@ Design a class ‘Complex ‘with data members for real and imaginary part. Prov
 import java.util.Scanner;
 class complex
 {
-    float real , imaginary;
+    static float real;
+    static float imaginary;
 
     public complex(float r, float i)
     {
@@ -87,13 +88,18 @@ public class Complex_working
                 {
                     case 1 :
                         complex.add();
+                        break;
                     case 2 :
                         complex.subtract();
+                        break;
                     case 3 :
                         complex.multiply();
+                        break;
                     case 4 :
                         complex.divide();
+                        break;
                     case 5 :
+                        System.out.println("\n\t--------------------\n\t Program Terminated \n\t--------------------");
                         break;
                 }
             }while(choose != 5);
