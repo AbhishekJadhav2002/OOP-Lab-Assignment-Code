@@ -21,7 +21,7 @@ Complex_working.java ->
  
  polymorph.java ->
  
-     Assignment 2: Prerequisite
+     Assignment 2 Prerequisite
      
            Write a program to implement static polymorphism 
            define a class calculator with multiple addition function as below 
@@ -32,3 +32,15 @@ Complex_working.java ->
            5. add for two char numbers
            Also test following
            overload the main for testing
+
+
+[29/09/2021]
+
+Employee_inherited.java ->
+     
+     Assignment no 2 : Study of Ineheritance
+          
+          Design and develop inheritance for a given case study, identify objects and relationships and implement inheritance wherever applicable. Employee class hasEmp_name, Emp_id,
+          Address, Mail_id, and Mobile_noas members. Inherit the classes: Programmer, Team Lead, Assistant Project Manager and Project Manager from employee class. Add Basic Pay (BP)
+          as the member of all the inherited classes with 97% of BP as DA, 10 % of BP as HRA, 12% of BP as PF, 0.1% of BP for staff club fund. Generate pay slips for the employees
+          with their gross and net salary.
