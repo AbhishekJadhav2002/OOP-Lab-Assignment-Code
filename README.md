@@ -45,3 +45,13 @@ Assignment_2-Inheritance ->
           Address, Mail_id, and Mobile_noas members. Inherit the classes: Programmer, Team Lead, Assistant Project Manager and Project Manager from employee class. Add Basic Pay (BP)
           as the member of all the inherited classes with 97% of BP as DA, 10 % of BP as HRA, 12% of BP as PF, 0.1% of BP for staff club fund. Generate pay slips for the employees
           with their gross and net salary.
+
+
+[10/10/2021]
+
+On branch named -
+Assignment_3-Polymorphism ->
+     
+          Identify commonalities and differences between Publication, Book and Magazine classes. Title, Price, Copies are common instance variables and saleCopy is common method. The
+          differences are, Bookclass has author and orderCopies(). Magazine Class has methods orderQty, Current issue, receiveissue().Write a program to find how many copies of the
+          given books are ordered and display total sale of publication.
