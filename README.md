@@ -36,7 +36,7 @@ Complex_working.java ->
 
 [29/09/2021]
 
-Employee_inherited.java ->
+Assignment 2 - Inheritance ->
      
      Assignment no 2 : Study of Ineheritance
           
