@@ -1,5 +1,6 @@
 ## Getting Started
 
+Pull the whole brach or download each folder/file in this branch to your local repository and then run.
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
