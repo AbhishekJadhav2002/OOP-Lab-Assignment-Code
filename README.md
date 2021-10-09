@@ -36,7 +36,8 @@ Complex_working.java ->
 
 [29/09/2021]
 
-Assignment 2 - Inheritance ->
+On branch named -
+Assignment_2-Inheritance ->
      
      Assignment no 2 : Study of Ineheritance
           
