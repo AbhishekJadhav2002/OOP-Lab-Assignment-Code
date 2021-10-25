@@ -52,7 +52,7 @@ class Employee
 }
 
 
-class programmer extends Employee
+class Programmer extends Employee
 {
     int bp = 50000;
     void display_pro(int i, int n)
@@ -100,7 +100,7 @@ public class Employee_inherited
 {
     public static void main( String [] args )
     {
-        programmer pro = new programmer();
+        Programmer pro = new Programmer();
         teamLeader lead = new teamLeader();
         Assistant Assist = new Assistant();
         ProjectManager pm = new ProjectManager();
