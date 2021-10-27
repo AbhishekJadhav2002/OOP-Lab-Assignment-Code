@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["classes"],
+    "java.project.outputPath": "bin",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#3C2057",
+        "titleBar.activeBackground": "#542D79",
+        "titleBar.activeForeground": "#FCFAFD"
+    },
+    "cSpell.words": [
+        "backgear",
+        "frontgear"
+    ]
+}
