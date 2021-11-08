@@ -1,6 +1,12 @@
+# OOP-Lab-Assignment-Code
+23232_Abhishek Jadhav My OOP Lab Assignments with Java code files are stored in this repository.
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**_Assignment No.- 6_**
+
+    For this, Fork or Download whole folder and run at your end.
+
+    Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 ## Folder Structure
 
@@ -13,6 +19,3 @@ Meanwhile, the compiled output files will be generated in the `classes` folder b
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
