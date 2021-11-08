@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#501052",
+        "titleBar.activeBackground": "#6F1773",
+        "titleBar.activeForeground": "#FEFCFE"
+    },
+    "java.project.sourcePaths": [
+        "Practice_Problem/src",
+        "Assignment_6-Exception_Handling/src"
+    ]
+}
