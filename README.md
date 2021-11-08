@@ -16,6 +16,7 @@ My OOP Lab Assignments with Java code files are stored in this repository.
 >4.<h4 align ="center">[`Assignment No. 4 - Dynamic Binding`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_4-Dynamic_Binding)</h4>
 >5.<h4 align ="center">[`Assignment No. 5 - Interface`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_5-Interface)</h4>
 >6.<h4 align ="center">[`Assignment No. 6 - Exception Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_6-Exception_Handling)</h4>
+>7.<h4 align ="center">[`Assignment No. 7 - Template`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_7-Template/Assignment_7-Template)</h4>
 >_________________________________________________________________________
 
 
@@ -112,8 +113,21 @@ On branch named -
 Assignment_6-Exception_Handling ->
 
           Exception Handling
-          Design a base class shape with two double type values and member functions to input the data and compute_area() for calculating area of shape. Derive two classes:
-          triangle and rectangle. Make compute_area() as abstract function and redefine this function in the derived class to suit their requirements. Write a program that
-          accepts dimensions of triangle/rectangle and display calculated area. Implement dynamic binding for given case study.
+          Implement a program to handle Arithmetic exception, Array Index Out Of Bounds.  The user enters two numbers Num1 and Num2. The division of Num1 and Num2 is displayed.
+          If Num1 and Num2 were not integers, the program would throw a Number Format Exception. If Num2 were zero, the program would throw an Arithmetic Exception and Display
+          the exception.
+
+__________________________________________________________________________
+
+[13/11/2021]
+
+_***AssignmentNo. 7 >***_
+
+On branch named -
+Assignment_7-Template ->
+
+          Template
+          Implement a generic program using any collection class to count the number of elements in a collection that have a specific property such as even numbers, odd number,
+          prime number and palindromes.
 
 __________________________________________________________________________
