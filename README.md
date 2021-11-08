@@ -15,6 +15,7 @@ My OOP Lab Assignments with Java code files are stored in this repository.
 >3.<h4 align ="center">[`Assignment No. 3 - Polymorphism`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_3-Polymorphism)</h4>
 >4.<h4 align ="center">[`Assignment No. 4 - Dynamic Binding`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_4-Dynamic_Binding)</h4>
 >5.<h4 align ="center">[`Assignment No. 5 - Interface`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_5-Interface)</h4>
+>6.<h4 align ="center">[`Assignment No. 6 - Exception Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_6-Exception_Handling)</h4>
 >_________________________________________________________________________
 
 
@@ -96,6 +97,23 @@ _***AssignmentNo. 5 >***_
 On branch named -
 Assignment_5-Interface ->
      
+          Interface
           Design and develop a context for given case study and implement an interface for Vehicles Consider the example of vehicles like bicycle, car and bike. All Vehicles
           have common functionalities such as Gear Change, Speed up and apply breaks. Make an interface and put all these common functionalities. Bicycle, Bike, Car classes
           should be implemented for all these functionalities in their own class in their own way.
+          
+__________________________________________________________________________
+
+[09/11/2021]
+
+_***AssignmentNo. 6 >***_
+
+On branch named -
+Assignment_6-Exception_Handling ->
+
+          Exception Handling
+          Design a base class shape with two double type values and member functions to input the data and compute_area() for calculating area of shape. Derive two classes:
+          triangle and rectangle. Make compute_area() as abstract function and redefine this function in the derived class to suit their requirements. Write a program that
+          accepts dimensions of triangle/rectangle and display calculated area. Implement dynamic binding for given case study.
+
+__________________________________________________________________________
