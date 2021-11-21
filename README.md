@@ -17,6 +17,7 @@ My OOP Lab Assignments with Java code files are stored in this repository.
 >5.<h4 align ="center">[`Assignment No. 5 - Interface`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_5-Interface)</h4>
 >6.<h4 align ="center">[`Assignment No. 6 - Exception Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_6-Exception_Handling)</h4>
 >7.<h4 align ="center">[`Assignment No. 7 - Template`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_7-Template/Assignment_7-Template)</h4>
+>8.<h4 align ="center">[`Assignment No. 8 - File Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_8-File_Handling)</h4>
 >_________________________________________________________________________
 
 
@@ -129,5 +130,23 @@ Assignment_7-Template ->
           Template
           Implement a generic program using any collection class to count the number of elements in a collection that have a specific property such as even numbers, odd number,
           prime number and palindromes.
+
+__________________________________________________________________________
+
+[20/11/2021]
+
+_***AssignmentNo. 8 >***_
+
+On branch named -
+Assignment_8-File_Handling ->
+
+          File Handling
+          Implement a program for maintaining a database of student records using Files. Student has Student_id, name, Roll_no, Class, marks and address. Display the data for
+          few students.
+          1. Create Database
+          2. Display Database
+          3. Delete Record
+          4. Update Record
+          5. Search Record
 
 __________________________________________________________________________
