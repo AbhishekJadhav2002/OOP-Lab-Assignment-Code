@@ -18,6 +18,7 @@ My OOP Lab Assignments with Java code files are stored in this repository.
 >6.<h4 align ="center">[`Assignment No. 6 - Exception Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_6-Exception_Handling)</h4>
 >7.<h4 align ="center">[`Assignment No. 7 - Template`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_7-Template/Assignment_7-Template)</h4>
 >8.<h4 align ="center">[`Assignment No. 8 - File Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_8-File_Handling)</h4>
+>9.<h4 align ="center">[`Assignment No. 9 - Factory Design Pattern`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_9-Factory_Design_Pattern)</h4>
 >_________________________________________________________________________
 
 
@@ -148,5 +149,19 @@ Assignment_8-File_Handling ->
           3. Delete Record
           4. Update Record
           5. Search Record
+
+__________________________________________________________________________
+
+[09/12/2021]
+
+_***AssignmentNo. 9 >***_
+
+On branch named -
+Assignment_9-Factory_Design_Pattern ->
+
+          Factory Design Pattern
+          Design and implement Factory design pattern for the given context. Consider Car building process, which requires many steps from allocating accessories to final
+          makeup. These steps should be written as methods and should be called while creating an instance of a specific car type. Hatchback, Sedan, SUV could be the subclasses
+          of Car class. Car class and its subclasses, CarFactory and TestFactoryPattern should be implemented.
 
 __________________________________________________________________________
