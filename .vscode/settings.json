@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "strategyclass"
+    ],
+    "java.project.outputPath": "classes",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#283113",
+        "titleBar.activeBackground": "#38441A",
+        "titleBar.activeForeground": "#FAFCF6"
+    }
+}
