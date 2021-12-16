@@ -19,6 +19,7 @@ My OOP Lab Assignments with Java code files are stored in this repository.
 >7.<h4 align ="center">[`Assignment No. 7 - Template`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_7-Template/Assignment_7-Template)</h4>
 >8.<h4 align ="center">[`Assignment No. 8 - File Handling`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_8-File_Handling)</h4>
 >9.<h4 align ="center">[`Assignment No. 9 - Factory Design Pattern`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_9-Factory_Design_Pattern)</h4>
+>10.<h4 align ="center">[`Assignment No. 10 - Strategy Design Pattern`](https://github.com/AbhishekJadhav2002/OOP-Lab-Assignment-Code/tree/Assignment_10-Strategy_Design_Pattern)</h4>
 >_________________________________________________________________________
 
 
@@ -163,5 +164,18 @@ Assignment_9-Factory_Design_Pattern ->
           Design and implement Factory design pattern for the given context. Consider Car building process, which requires many steps from allocating accessories to final
           makeup. These steps should be written as methods and should be called while creating an instance of a specific car type. Hatchback, Sedan, SUV could be the subclasses
           of Car class. Car class and its subclasses, CarFactory and TestFactoryPattern should be implemented.
+
+__________________________________________________________________________
+
+[14/12/2021]
+
+_***AssignmentNo. 10 >***_
+
+On branch named -
+Assignment_10-Strategy_Design_Pattern ->
+
+          Strategy Design Pattern
+          Implement and apply Strategy Design pattern for simple Shopping Cart where three payment strategies are used such as Credit Card, PayPal, Bit Coin. Create an interface
+          for strategy pattern and give concrete implementation for payment.
 
 __________________________________________________________________________
