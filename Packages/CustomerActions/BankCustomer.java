@@ -2,15 +2,28 @@ package Packages.CustomerActions;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
+import java.io.*;
 
 public class BankCustomer
 {
     public String name;
+    private String account_no, phone_no;
+    private float balance = 0.0F;
+    private LogPrinter<String> printer = new LogPrinter<String>();
+    protected Vector<Vector<String>> TransDetails = new Vector<Vector<String>>();
 
-    private
-        String account_no, phone_no;
-        float balance = 0.0F;
-        Vector<Vector<String>> TransDetails = new Vector<Vector<String>>();
+    public void FileProvider()
+    {
+        File clear = new File("LogFile_"+account_no+".txt");
+        clear.delete();
+        printer = printer.GivePrinter("Customer", "LogFile_"+account_no+".txt");
+        for (Vector<String> TransVector : TransDetails)
+        {
+            printer.WriteToFile(TransVector);
+        }
+        System.out.print("\n> Transitions Log contents written to the file "+printer.LogFileName+"\n");
+        return;
+    }
 
     public void FillMeIn(String name, String phone_no)
     {
@@ -20,12 +33,17 @@ public class BankCustomer
         balance = 0;
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
         this.account_no = date.format(myFormatObj) + Integer.toString(date.getNano());
+
     }
 
-    public void DisplayContents()
+    public Vector<String> DisplayContents()
     {
         System.out.print("\n"+name+"\t\t"+balance+"\t\t"+account_no+"\t\t"+phone_no);
-        return;
+        Vector<String> customerDetailsVector = new Vector<String>();
+        customerDetailsVector.add(name);
+        customerDetailsVector.add(account_no);
+        customerDetailsVector.add(phone_no);
+        return customerDetailsVector;
     }
 
     public void Deposit(float AddToBalance)
@@ -52,7 +70,7 @@ public class BankCustomer
             DetailsTempVector.add(Float.toString(RemoveFromBalance));
             DetailsTempVector.add(transactions.TransID + TransDetails.size());
             TransDetails.add(DetailsTempVector);
-            System.out.print("\n\n------------------------------- Withdraw -------------------------------\nCustomer with name '"+name+"' withdrawn : Rs."+RemoveFromBalance+" +2% Taxes\nTransaction ID : "+transactions.GiveTransLogID()+"\t\tUpdated Balance : Rs."+balance+"\n------------------------------------------------------------------------\n");
+            System.out.print("\n\n------------------------------- Withdraw -------------------------------\nCustomer with name '"+name+"' withdrawn : Rs."+RemoveFromBalance+" (+2% Taxes)\nTransaction ID : "+transactions.GiveTransLogID()+"\t\tUpdated Balance : Rs."+balance+"\n------------------------------------------------------------------------\n");
             return;
         }
         else
@@ -64,7 +82,7 @@ public class BankCustomer
 
     public void DisplayTransLogsOfCustomer()
     {
-        System.out.print("\n-------------------------- Transition Details -------------------------\n\t\t\tName of customer : "+name+"\n\nIndex No.\tTransaction Type\tAmount(Rs)\tTransaction ID\n-----------------------------------------------------------------------");
+        System.out.print("\n\n-------------------------- Transition Details -------------------------\n\t\t\tName of customer : "+name+"\n\nIndex No.\tTransaction Type\tAmount(Rs)\tTransaction ID\n-----------------------------------------------------------------------");
         int i = 1;
         for (Vector<String> vector : TransDetails)
         {

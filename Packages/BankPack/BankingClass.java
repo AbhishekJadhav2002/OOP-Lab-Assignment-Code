@@ -1,40 +1,57 @@
 package Packages.BankPack;
 import Packages.CustomerActions.BankCustomer;
-import java.util.ArrayList;
+import Packages.CustomerActions.LogPrinter;
+import java.util.*;
+import java.io.*;
 
 public class BankingClass implements BankInterface
 {
-    private
-        ArrayList<BankCustomer> customerList = new ArrayList<BankCustomer>();
-        public void ShowCustomerDetails(String customerName)
+    private Vector<BankCustomer> customerList = new Vector<BankCustomer>();
+    private LogPrinter<String> printer = new LogPrinter<String>();
+
+    public void ShowCustomerDetails(String customerName)
+    {
+        System.out.print("\nName\t\t\tBalance(Rs.)\tAccount No.\t\t\tContact No.\n--------------------------------------------------------------------------------------");
+        for (BankCustomer bankCustomer : customerList)
         {
-            System.out.print("\nName\t\t\tBalance(Rs.)\tAccount No.\t\t\tContact No.\n--------------------------------------------------------------------------------------");
-            for (BankCustomer bankCustomer : customerList)
-            {
-            if(customerName.equalsIgnoreCase(bankCustomer.name))
-                bankCustomer.DisplayContents();
-                System.out.print("\n--------------------------------------------------------------------------------------");
-                return;
-        }
-        System.out.print("\nCustomer with name '"+customerName+"' is not found !\n");
-        return;
+        if(customerName.equalsIgnoreCase(bankCustomer.name))
+            bankCustomer.DisplayContents();
+            System.out.print("\n--------------------------------------------------------------------------------------");
+            return;
+    }
+    System.out.print("\nCustomer with name '"+customerName+"' is not found !\n");
+    return;
     }
 
     @Override
         public void CreateAccount(String name, String phone_no)
         {
+            for (BankCustomer bankCustomer : customerList)
+            {
+                if(name.equalsIgnoreCase(bankCustomer.name))
+                {
+                    System.out.print("\n[ Customer with name '"+name+"' has already an account in bank, cannot create with same name! ]\n");
+                    return;
+                }
+            }
             customerList.add(new BankCustomer());
             customerList.get(customerList.size()-1).FillMeIn(name, phone_no);
         }
 
         public void ShowBankLogs()
         {
-            System.out.print("\nName\t\tBalance(Rs.)\tAccount No.\tContact No.\n----------------------------------------------------------");
+            Vector<String> currentCustomerDetails = new Vector<String>();
+            File clear = new File("BankLog.txt");
+            clear.delete();
+            printer = printer.GivePrinter("Bank", "BankLog.txt");
+            System.out.print("\n\n\n-----------------------------------------------------------------------------------\nName\t\t\tBalance(Rs.)\tAccount No.\t\t\tContact No.\n-----------------------------------------------------------------------------------");
             for (BankCustomer bankCustomer : customerList)
             {
-                bankCustomer.DisplayContents();
+                currentCustomerDetails = bankCustomer.DisplayContents();
+                printer.WriteToFile(currentCustomerDetails);
             }
-            System.out.print("\n----------------------------------------------------------");
+            System.out.print("\n\n> Banks' customers details written to the file BankLog.txt\n");
+            System.out.print("-----------------------------------------------------------------------------------\n");
         }
 
         public void CheckBalanceAndLogs(String name)
@@ -42,8 +59,19 @@ public class BankingClass implements BankInterface
             for (BankCustomer bankCustomer : customerList)
             {
                 if(name.equalsIgnoreCase(bankCustomer.name))
+                {
+                    Scanner in = new Scanner(System.in);
                     bankCustomer.DisplayTransLogsOfCustomer();
+                    System.out.print("\nDo you want to print this details to the Log File?\n(Press any key for 'Yes' / Press '!' for 'No') : ");
+                    String PrintOrNot = in.next();
+                    if(PrintOrNot != "!")
+                    {
+                        bankCustomer.FileProvider();
+                    }
+                    System.out.print("-----------------------------------------------------------------------\n");
+                    // in.close();
                     return;
+                }
             }
             System.out.print("\nCustomer with name '"+name+"' is not found !\n");
             return;
