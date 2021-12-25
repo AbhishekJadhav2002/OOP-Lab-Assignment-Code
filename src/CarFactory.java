@@ -8,8 +8,9 @@
 ============================================================================
 */
 
-import java.util.*;
+import java.util.Scanner;
 import CarPackage.*;
+
 public class CarFactory
 {
     public static void main(String[] args) throws Exception

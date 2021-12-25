@@ -1,5 +1,8 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src",
+        "CarPackage"
+    ],
     "java.project.outputPath": "classes",
     "workbench.colorCustomizations": {
         "activityBar.background": "#58150F",

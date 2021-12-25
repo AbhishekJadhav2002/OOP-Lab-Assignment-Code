@@ -1,4 +1,5 @@
 package CarPackage;
+
 public class Luxury extends Cars
 {
     @Override

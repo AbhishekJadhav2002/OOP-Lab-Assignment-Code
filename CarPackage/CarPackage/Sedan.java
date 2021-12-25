@@ -1,4 +1,5 @@
 package CarPackage;
+
 public class Sedan extends Cars
 {
     @Override
